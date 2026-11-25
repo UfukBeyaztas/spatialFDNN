@@ -1,0 +1,21 @@
+Package: spatialFDNN
+Type: Package
+Title: Spatial Functional Deep Neural Networks
+Version: 0.1.0
+Authors@R: person("Ufuk", "Beyaztas", email = "ufuk.beyaztas@marmara.edu.tr",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5208-4950"))
+Description: Prediction of a scalar response from functional and scalar
+    predictors observed at spatial locations. The spatial autoregressive
+    parameter is estimated by maximum likelihood in a linear working model
+    built on functional principal component scores, the B-spline summaries of
+    the predictors are filtered with the inverse of the spatial autoregressive
+    operator, and a neural network with a sigmoid and a linear hidden layer is
+    trained on the filtered summaries. The package also provides a residual
+    correction for held-out sites with observed neighbors, perturbation
+    contrasts of the fitted network, a bound on the sensitivity of the
+    predictions to the spatial parameter, spatial weight matrices, and the
+    data-generating designs of the simulation study.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: Matrix, splines, stats, utils
